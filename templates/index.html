@@ -5,16 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashwin's Portfolio</title>
     <link rel="icon" href="https://image.flaticon.com/icons/svg/942/942799.svg">
+
+    <!-- STATIC FILES (NON-SERVER LINKS) -->
     <!-- <link rel="stylesheet" type="text/css" href="../static/css/index.css"> -->
     <!-- <script type="text/javascript" src="../static/js/index.js"></script> -->
+
+    <!-- STATIC FILES (SERVER LINKS) -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="workspace">
-        <div onmouseover="revealOptions(this)" class="main_element">
-            <p class="main_element">Ashwin's Portfolio</p>
+    <div id="first-view">
+        <div class="ap-box"
+        onmouseover=showSecondView(this)
+        onmouseout=showFirstView(this)
+        >
+            <p>Ashwin's Portfolio</p>
+        </div>
+    </div>
+
+    <div id="second-view">
+        <div class="ap2-box">
+            <p>Ashwin's Portfolio</p>
+        </div>
+        <div class="options-wrapper">
+            <div class="click-options"
+            onmouseover="highlightMyStory(this)"
+            onmouseout="unhighlightMyStory(this)"
+            >
+                <p>My Story</p>
+                <hr id="mystory-underline">
+            </div>
+            <!-- <div class="click-options"
+            onmouseover="highlightProjects(this)"
+            onmouseout="unhighlightProjects(this)"
+            >
+                <p>Projects</p>
+                <hr id="projects-underline">
+            </div>
+            <div class="click-options"
+            onmouseover="highlightResume(this)"
+            onmouseout="unhighlightResume(this)"
+            >
+                <p>Resume</p>
+                <hr id="resume-underline">
+            </div> -->
         </div>
     </div>
 </body>
