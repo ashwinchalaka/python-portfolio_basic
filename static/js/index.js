@@ -1,48 +1,36 @@
 
 function showSecondView(x) {
-    // alert("hi");
-    var element2hide = document.getElementById('first-view');
-    element2hide.style.display = "none";
-    var element2show = document.getElementById('second-view');
-    element2show.style.display = "block";
+    document.getElementsByClassName('clickable_area')[0].className = "clickable_area-2";
+    document.getElementsByClassName('ap_box')[0].className = "ap_box-2";
+    document.getElementsByClassName('options_wrapper')[0].style.zIndex = "1";
 }
 
 function showFirstView(x) {
-    // alert("Ashwin");
-    var element2hide = document.getElementById('second-view');
-    element2hide.style.display = "none";
-    var element2show = document.getElementById('first-view');
-    element2show.style.display = "block";
+    document.getElementsByClassName('clickable_area-2')[0].className = "clickable_area";
+    document.getElementsByClassName('ap_box-2')[0].className = "ap_box";
+    document.getElementsByClassName('options_wrapper')[0].style.zIndex = "-1";
 }
 
 function highlightMyStory(x) {
-    alert("My Story");
-    var element2highlight = document.getElementById('mystory-underline');
-    element2highlight.style.display = "block";
+    document.getElementById("mystory-underline").style.opacity = "1";
 }
 
 function unhighlightMyStory(x) {
-    alert("Made His-story");
-    var element2highlight = document.getElementById('mystory-underline');
-    element2highlight.style.display = "none";
+    document.getElementById("mystory-underline").style.opacity = "0";
 }
 
-// function highlightProjects(x) {
-//     var element2highlight = document.getElementById('projects-underline');
-//     element2highlight.style.display = "block";
-// }
+function highlightProjects(x) {
+    document.getElementById("projects-underline").style.opacity = "1";
+}
 
-// function unhighlightProjects(x) {
-//     var element2highlight = document.getElementById('projects-underline');
-//     element2highlight.style.display = "none";
-// }
+function unhighlightProjects(x) {
+    document.getElementById("projects-underline").style.opacity = "0";
+}
 
-// function highlightResume(x) {
-//     var element2highlight = document.getElementById('resume-underline');
-//     element2highlight.style.display = "block";
-// }
+function highlightResume(x) {
+    document.getElementById("resume-underline").style.opacity = "1";
+}
 
-// function unhighlightResume(x) {
-//     var element2highlight = document.getElementById('resume-underline');
-//     element2highlight.style.display = "none";
-// }
+function unhighlightResume(x) {
+    document.getElementById("resume-underline").style.opacity = "0";
+}

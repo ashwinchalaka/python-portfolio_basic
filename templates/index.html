@@ -18,42 +18,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="first-view">
-        <div class="ap-box"
+    <div class="clickable_area"
         onmouseover=showSecondView(this)
         onmouseout=showFirstView(this)
-        >
+    >
+        <div class="ap_box">
             <p>Ashwin's Portfolio</p>
         </div>
-    </div>
 
-    <div id="second-view">
-        <div class="ap2-box">
-            <p>Ashwin's Portfolio</p>
-        </div>
-        <div class="options-wrapper">
-            <div class="click-options"
-            onmouseover="highlightMyStory(this)"
-            onmouseout="unhighlightMyStory(this)"
+        <div class="options_wrapper">
+            <div class="click_option"
+                onmouseover=highlightMyStory(this)
+                onmouseout=unhighlightMyStory(this)
             >
-                <p>My Story</p>
+                <a href="#">My Story</a>
                 <hr id="mystory-underline">
             </div>
-            <!-- <div class="click-options"
-            onmouseover="highlightProjects(this)"
-            onmouseout="unhighlightProjects(this)"
+            <div class="click_option"
+                onmouseover=highlightProjects(this)
+                onmouseout=unhighlightProjects(this)
             >
-                <p>Projects</p>
+                <a href="#">Projects</a>
                 <hr id="projects-underline">
             </div>
-            <div class="click-options"
-            onmouseover="highlightResume(this)"
-            onmouseout="unhighlightResume(this)"
+            <div class="click_option"
+                onmouseover=highlightResume(this)
+                onmouseout=unhighlightResume(this)
             >
-                <p>Resume</p>
+                <a href="#">Resume</a>
                 <hr id="resume-underline">
-            </div> -->
+            </div>
         </div>
+
     </div>
 </body>
 </html>
