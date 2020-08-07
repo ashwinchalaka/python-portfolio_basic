@@ -3,10 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ashwin's Portfolio</title>
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/942/942799.svg">
+
+    <!-- STATIC FILES (NON-SERVER LINKS) -->
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/mystory.css"> -->
+    <!-- <script type="text/javascript" src="../static/js/mystory.js"></script> -->
+
+    <!-- STATIC FILES (SERVER LINKS) -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mystory.css') }}">
+    
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
 </head>
+<header>
+    <h1>My Story <span>(dev tools)</span></h1>
+    <a href="/">go home</a>
+    <a href="/projects">go projects</a>
+    <a href="/resume">go resume</a>
+    <hr>
+</header>
 <body>
-    <h1>My Story</h1>
-    <a href="/">go back</a>
+    <div>
+
+    </div>
 </body>
 </html>
