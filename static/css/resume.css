@@ -1,0 +1,127 @@
+/* ***************** *//* ***************** *//* ***************** */
+/* ***************** *//* DEV TOOLS STYLING *//* ***************** */
+/* ***************** *//* ***************** *//* ***************** */
+
+header {
+    margin: 15px;
+    display: none;
+}
+
+h1 span {
+    font-size: 16px;
+}
+
+header a {
+    display: block;
+}
+
+/* ***************** *//* ***************** *//* ***************** */
+/* ***************** *//* DOCUMENT SETTINGS *//* ***************** */
+/* ***************** *//* ***************** *//* ***************** */
+
+* {
+
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: rgb(111,92,92);
+    padding-top: 20px;
+}
+
+/* *********************** *//* *********************** *//* *********************** */
+/* *********************** *//* ASHWIN'S PORTFOLIO SIGN *//* *********************** */
+/* *********************** *//* *********************** *//* *********************** */
+
+div.ap_box {
+    height: 90px;
+    width: 12.5%;
+    margin: 40px 43.5%;
+    border: 2px solid white;
+}
+
+div.ap_box p {
+    margin: 10% 7% 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Playfair Display SC', serif;
+    color: white;
+}
+
+/* *********************** *//* *********************** *//* *********************** */
+/* *********************** *//* RESUME PICTURES *//* *********************** */
+/* *********************** *//* *********************** *//* *********************** */
+
+div.resize_links {
+    width: 75%;
+    margin: 40px 12.5% 0;
+    text-align: center;
+}
+
+div.resize_links p {
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: underline;
+}
+
+div.resize_links span {
+    vertical-align: middle;
+    font-size: 24px;
+    color: white;
+}
+
+div.resize_links p#pdf_viewer-link {
+    font-weight: bold;
+    text-shadow: 0 0 10px white;
+}
+
+div#resume-inViewer {
+    display: block;
+}
+
+iframe {
+    /* width: 100%; */
+    width: 75%;
+    height: 1250px;
+    margin: 0 12.5%;
+    display: block;
+}
+
+div#resume-small {
+    display: none;
+}
+
+div#resume-small img {
+    width: 75%;
+    margin: 0 12.5%;
+}
+
+div#resume-large {
+    display: none;
+}
+
+div#resume-large img {
+    width: 99%;
+    margin: 0 .5%;
+}
+
+/* ****** *//* ****** *//* ****** */
+/* ****** *//* FOOTER *//* ****** */
+/* ****** *//* ****** *//* ****** */
+
+div.footer {
+    width: 15%;
+    margin: 100px 42.5%;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 0 white;
+}
+
+div.footer p {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
